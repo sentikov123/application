@@ -8,6 +8,50 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 .container {
-    max-width: 1110px;
+    max-width: 1440px;
+    height: 628px;
     margin: 0 auto;
+    background-color: #D5FAFC;
+}
+.leftblock {
+    margin: 0 auto;
+    width: 705px;
+    background-color: #2EC5CE;
+    display: inline-block;
+}
+.leftblock_txt {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 246px 95px 246px 165px;
+    background-color: #2EC5CE;
+    width: 445px;
+}
+h2{ 
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+p { 
+    font-size: 18px;
+}
+
+.rightblock {
+    margin-left: -4px;
+    width: 570px;
+
+    display: inline-block;
+    background-color:olive;
+    margin-top: 32px;
+}
+.rightblock_txt {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#jenny {
+    font-size: 18px;
+    font-weight: 700;
+}
+#Vice {
+    font-size: 14px;
+    font-weight: 400;
 }
