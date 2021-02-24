@@ -7,31 +7,35 @@ body {
 h1, h2, h3, h4, p {
     margin: 0;
 }
+
 section {
     background-color: #D5FAFC;
 }
+
 .container {
     width: 1110px;
     margin: 0 auto;
     background-color: #D5FAFC;
 }
+
 .leftblock {
-    margin: 0 auto;
     background-color: #2EC5CE;
     display: inline-block;
     vertical-align: middle;
 }
+
 .leftblock_txt {
-    margin: 0 auto;
     display: inline-block;
-    padding: 246px 95px 246px 0px;
+    margin: 246px 95px 246px 0px;
     background-color: #2EC5CE;
     width: 445px;
 }
+
 h2{ 
     font-size: 48px;
     margin-bottom: 8px;
 }
+
 p { 
     font-size: 18px;
     width: 400;
@@ -44,10 +48,7 @@ p {
     background-color: #ffffff;
     vertical-align: middle;
 }
-.rightblock_txt {
-    margin: 0 auto;
-    display: inline-block;
-}
+
 .rightblock_txt_icon {
     margin-left: 40px;
     margin-right: 40px;
@@ -55,18 +56,29 @@ p {
     display: inline-block;
 
 }
+
+#girl {
+    vertical-align: middle;
+    margin-top: -15px;
+}
+
 .name_block {
     display: inline-block;
     margin: 0 auto;
     margin-left: 16px;
     margin-bottom: 24px;
+    vertical-align: middle;
+
 }
 
 #jenny {
     font-size: 18px;
     font-weight: 700;
     margin-top: 2px;
+    margin-bottom: 10px;
+
 }
+
 #Vice {
     font-size: 14px;
     font-weight: 400;
@@ -86,6 +98,7 @@ p {
     padding: 13px 16px;
     margin-right: 8px;
 }
+
 #vector-right{
     padding: 13px 16px;
 }
