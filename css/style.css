@@ -117,7 +117,6 @@ button:hover {
 }
 
 button:focus {
-    background-color:   #5f0fbb;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-    border-color:  #5f0fbb;;
+    background-color: rgb(76, 0, 148);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
