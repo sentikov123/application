@@ -1,13 +1,123 @@
 body {
+    margin: 0;
     font-family: "Manrope", sans-serif;
     color: #18191f;
-    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5 p {
     margin: 0;
 }
 .container {
-    max-width: 1110px;
+    width: 1110px;
     margin: 0 auto;
+
+
+}
+
+.left_block {
+    margin: 64px 30px 64px 0;
+
+    width: 540px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img {
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+.img1 {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.img2 {
+    margin-left: -4px;
+    margin-bottom: 20px;
+}
+.img3 {
+    position: relative;
+    bottom: 71px;
+    margin-right: 19px;
+}
+
+.img4 {
+    margin-left: -3px;
+}
+
+.right_block {
+    display: inline-block;
+    width: 540px;
+    margin-right: -4px;
+    background-color: #ffffff;
+    vertical-align: middle;
+}
+svg {
+    margin-right: 28px;
+    padding-left: 48px ;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h3{
+    font-weight: 800;
+    font-size: 40px;
+    padding-left: 48px ;
+    margin-bottom: 16px;
+}
+
+#paragraph {    
+    padding-left: 48px ;
+}
+
+.head_txt {
+    margin-bottom: 40px ;
+}
+
+.iconblock1{
+    margin-bottom: 24px;
+}
+.iconblock2{
+    margin-bottom: 40px;
+}
+p{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    padding-right: 48px;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+
+}
+.txt {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+button{
+    background-color: #8C30F5;
+    margin-left: 48px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 10px 21px 10px 22px;
+    font-family: "Manrope", sans-serif;
+    border: 0;
+}
+
+button:hover {
+    background-color: rgb(132, 0, 255);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+    background-color:   #5f0fbb;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    border-color:  #5f0fbb;;
 }
