@@ -1,13 +1,100 @@
 body {
+    margin: 0;
     font-family: "Manrope", sans-serif;
     color: #18191f;
-    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, p {
     margin: 0;
 }
 .container {
-    max-width: 1110px;
+    width: 1110px;
     margin: 0 auto;
+}
+
+h2 {
+    width: 540px;
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 48px;
+}
+
+.left-block {
+    display: inline-block;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+}
+
+#blue-circle {
+    top: 190px;
+    left: 468px;
+}
+
+#red-circle {
+    top: 392px;
+}
+
+#green-circle{
+    top: 571px;
+    left: 373px;
+}
+
+
+img {
+    position: absolute;
+    border-radius: 4px;
+}
+
+#blue {
+    left: 201px;
+}
+
+#red {
+    top: 243px;
+    left: 33px;
+}
+
+#green{
+    top: 414px;
+    left: 220px;
+}
+
+.right-block {
+    display: inline-block;
+    width: 540px;
+    margin: 21.5px 0px 21.5px 570px;
+}
+
+.text_block {
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+h5 {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+p {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+.dot{
+position: static;
+display: inline-block;
+vertical-align: middle;
+margin: 13px 10px 13px 0;
 }
