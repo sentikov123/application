@@ -2,7 +2,6 @@ body {
     font-family: 'Mulish', sans-serif;
     color: #18191F;
     box-sizing: border-box;
-
     margin: 0 auto;
     }
 
@@ -14,7 +13,7 @@ section {
 }
 
 .all {
-    max-width: 1920px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 56px;
 }
@@ -186,6 +185,8 @@ h4 {
     margin-top: 266px;
     position: relative;
     color: #FFFFFF;
+    outline: none;
+    margin-left: 10px;
 }
 
 .head-four {
@@ -218,10 +219,11 @@ h4 {
     justify-content: space-around;
 }
 
-.icon-edward, .edward-txt{
-    display: inline-block;
+.icon-edward {
+    display: flex;
     vertical-align: middle;
 }
+
 
 .info-edward{
     display: inline-block;
@@ -357,7 +359,7 @@ footer{
 }
 
 .a-footer {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -548,7 +550,7 @@ h5 {
     }
     #edward-img {
         width: 30%;
-
+        height: 30%;
         margin: 0 auto;
     }
     .edward-txt {
@@ -597,5 +599,58 @@ h5 {
         display: flex;
         justify-content: space-between;
     }
-    
+      
+}
+
+
+.container {
+
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* настройки слик-слайдера собственные */
+
+
+.slider-arrow {
+    position:absolute;
+    bottom: 0;
+    z-index: 99;
+    width: 29px;
+    height: 20px;
+    cursor: pointer;
+    bottom: -43px;
+}
+
+.slider-arrow__left {
+    background:  url(../img/inactive_arrow.svg ) center no-repeat;
+    right: 50%;
+    margin-right: 100px;
+}
+
+.slider-arrow__right {
+    background:  url(../img/inactive_arrow.svg ) center no-repeat;
+    right: 50%;
+    margin-right: -100px;
+    transform: rotate(180deg)
+}
+
+.slick-disabled {
+    background: url(../img/inactive_arrow__left.svg) 
+}
+
+/* перебивка точек слайдера */
+
+.slick-dots{
+    bottom: -42px;
+}
+
+.slick-dots li button:before{
+    content: '';
+    background: url(../img/inactive_dot.svg) center no-repeat;
+}
+
+.slick-dots li.slick-active button:before {
+    content: '';
+    background: url(../img/active_dot.svg) center no-repeat;
 }
