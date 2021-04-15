@@ -1,0 +1,62 @@
+.header-flex
+    display: flex
+    justify-content: space-between
+    margin-top: 70px
+    text-transform: uppercase
+    vertical-align: middle
+
+    &__left
+        display: flex
+        justify-content: space-around
+
+    &__right
+        display: flex
+
+#logo
+    vertical-align: middle
+    cursor: pointer 
+
+li
+    padding-left: 30px
+    padding-right: 30px
+    cursor: pointer
+    list-style-type: none
+    vertical-align: middle 
+    padding-top: 5px    
+
+a
+    text-decoration: none
+    font-size: 14px
+    font-weight: 400
+    line-height: 19px
+    letter-spacing: 0.13em
+
+.link
+    &::after
+        content: ''
+        display: block
+        width: 0
+        height: 2px
+        transition: width .3s
+        background: rgba(48, 48, 50, 1)
+.link
+    &:hover::after
+        width: 100%
+        transition: width .4s
+             
+    
+#search
+    cursor: pointer
+
+#shop 
+    padding-left: 60px
+    cursor: pointer
+
+.background-pink
+    position: absolute
+    right: 0
+    top: 0
+    background: rgba(252, 234, 232, 1)
+    width: 36%
+    z-index: -3    
+    height: 751px 
