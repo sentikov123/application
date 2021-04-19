@@ -1,0 +1,76 @@
+.slick
+    &-slider
+        text-transform: uppercase
+        padding-right: 20px 
+        padding-left: 20px  
+
+        &__flex
+            display: flex
+            justify-content: space-between
+            align-content: center
+            border: none
+            
+        &__left-block
+            height: 360px   
+            max-width: 545px    
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            margin-top: 40px  
+            margin-left: 2px  
+        &__left-block h1
+            font-family: Playfair Display
+            font-size: 57px
+            font-weight: 700
+            line-height: 83px
+            letter-spacing: 0.05em
+        &__left-block p  
+            text-transform: none 
+            font: $font-OpenSans-sm
+            position: relative
+            bottom: -4px
+            margin-top: 10px       
+
+        &__left-block #display-block p
+            display: inline-block
+            
+
+        &__left-block h3  
+            font: $font-OpenSans-lg
+            display: inline-block 
+            margin-left: 20px
+
+
+        &__right-block
+            vertical-align: middle
+            margin-top: 40px    
+        &__left-block button
+            border: none
+            cursor: pointer
+            text-transform: uppercase
+            max-width: 238px    
+            padding: 18px 80px
+ 
+            font: $font-OpenSans-sm
+            background-color: #303032  
+            color: #FFFFFF
+            letter-spacing: 0.13em
+        &__left-block button:hover
+            background-color: #424244 
+        &__left-block button:focus
+            background-color: #676769 
+            outline: none
+.draggable
+    outline: none
+
+.container:focus
+    outline: none
+
+.slick-dots 
+    position: absolute
+    right: 0
+    width: 100px 
+    display: flex  
+    flex-direction: column
+    bottom: 0
+.slick-active

@@ -18,6 +18,8 @@ h1, h2, h3, h4, p {
   margin-top: 70px;
   text-transform: uppercase;
   vertical-align: middle;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .header-flex__left {
@@ -79,24 +81,319 @@ a {
   right: 0;
   top: 0;
   background: #fceae8;
-  width: 36%;
+  width: 30%;
   z-index: -3;
-  height: 751px;
+  height: 600px;
+}
+
+#SLG_balloon_obj {
+  display: none !important;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1024px;
+  padding: 10px;
+  margin: 0px auto;
+  display: none;
+}
+
+.menuToggle {
+  color: #313133;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .header-flex__left {
+    display: none;
+  }
+  .header-flex__right {
+    position: absolute;
+    right: 90px;
+    top: 22px;
+  }
+  .wrapper {
+    display: block;
+  }
+  .menuToggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 2000;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: -20px;
+    background: #303032;
+    width: 105%;
+    margin-left: -10px;
+    padding-left: 10px;
+    z-index: 2;
+  }
+  .menu li {
+    display: block;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    z-index: 1001;
+  }
+  .menuToggle .icon .active {
+    background: #FFFFFF;
+  }
+  .icon {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+  }
+  .hamburger {
+    width: 30px;
+    height: 3px;
+    transform: translate(-50%, -50%);
+    background: #313133;
+    transition: 0.5s;
+    display: inline-block;
+    margin-left: 12px;
+  }
+  .hamburger:before,
+  .hamburger:after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background: #313133;
+    transition: 0.5s;
+  }
+  .hamburger:before {
+    top: -12px;
+  }
+  .hamburger:after {
+    top: 12px;
+  }
+  .icon.active .hamburger {
+    background: rgba(0, 0, 0, 0);
+  }
+  .icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+    background: #ffffff;
+  }
+  .icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+    background: #ffffff;
+  }
+  #burger-pt {
+    padding-top: 150px;
+  }
+  #burger-pb {
+    padding-bottom: 150px;
+  }
+  #burger-p {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+  #logo-mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 
 @font-face {
-  font-family: "PlayfairDisplay-Regular";
-  src: local "PlayfairDisplay";
-  src-url: "../fonts/PlayfairDisplay-Regular.ttf" format("ttf");
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: "PlayfairDisplay-Bold";
-  src: local "PlayfairDisplay";
-  src-url: "../fonts/PlayfairDisplay-Regular.ttf" format("ttf");
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans-bold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfair-display.woff2") format("woff2"), url("../fonts/playfair-display.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/playfair-display-bold.woff2") format("woff2"), url("../fonts/playfair-display-bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+}
+
+.slick-slider {
+  text-transform: uppercase;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.slick-slider__flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border: none;
+}
+
+.slick-slider__left-block {
+  height: 360px;
+  max-width: 545px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-left: 2px;
+}
+
+.slick-slider__left-block h1 {
+  font-family: Playfair Display;
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 83px;
+  letter-spacing: 0.05em;
+}
+
+.slick-slider__left-block p {
+  text-transform: none;
+  font: 400 14px "Open sans", sans-serif;
+  position: relative;
+  bottom: -4px;
+  margin-top: 10px;
+}
+
+.slick-slider__left-block #display-block p {
+  display: inline-block;
+}
+
+.slick-slider__left-block h3 {
+  font: 600 30px "Open sans", sans-serif;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.slick-slider__right-block {
+  vertical-align: middle;
+  margin-top: 40px;
+}
+
+.slick-slider__left-block button {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  max-width: 238px;
+  padding: 18px 80px;
+  font: 400 14px "Open sans", sans-serif;
+  background-color: #303032;
+  color: #FFFFFF;
+  letter-spacing: 0.13em;
+}
+
+.slick-slider__left-block button:hover {
+  background-color: #424244;
+}
+
+.slick-slider__left-block button:focus {
+  background-color: #676769;
+  outline: none;
+}
+
+.draggable {
+  outline: none;
+}
+
+.container:focus {
+  outline: none;
+}
+
+.slick-dots {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .slick-slider__left-block {
+    max-width: 420px;
+  }
+  .slick-slider__left-block h1 {
+    font-size: 45px;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slick-slider__left-block {
+    max-width: 380px;
+  }
+  .slick-slider__left-block h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .slick-slider__left-block p {
+    margin-top: -4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slick-slider__flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .slick-slider__left-block {
+    max-width: 340px;
+    margin-left: 30px;
+  }
+  .slick-slider__left-block h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .slick-slider__left-block p {
+    margin-top: -30px;
+  }
+  .slick-slider__left-block button {
+    margin-top: -30px;
+  }
+  .slick-slide img {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .background-pink {
+    width: 50%;
+    height: 480px;
+    right: -25px;
+  }
+}
+
+.header-flex__left li {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */

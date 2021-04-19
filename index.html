@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normolize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="slick-slider/slick.css">
+    <link rel="stylesheet" href="slick-slider/slick-theme.css">
 
 </head>
 <body>
   
   <div class="container">
     <div class="background-pink">
-          
     </div>
     <header>
       <div class="header-flex">
@@ -28,8 +29,123 @@
             <img id="shop" src="img/icon-shop.png" alt="">
         </div>
       </div>
+      <!-- burger menu on -->
+<nav>
+  <div class="wrapper">
+      <div class="menuToggle icon">
+          <div class="hamburger"></div>
+      </div>
+      
+      <ul class="menu">
+          <li><a id="burger-pt" href="#">мебель</a></li>
+          <li><a id="burger-p" href="#">освещение</a></li>
+          <li><a id="burger-pb" href="#">текстиль</a></li>
+      </ul>
+  </div>
+</nav>
 
+<!-- burger menu off -->
     </header>
+
+  <div class="container">
+    <div class="slick-slider">
+      <div>
+        <div class="slick-slider__flex">
+          <div>
+            <div class="slick-slider__left-block">
+              <h1>дизайнерская мебель</h1>
+              <p>Кресло “Антиква”</p>
+              <div id="display-block">
+                <p >$380</p>
+                <h3>$240</h3>
+              </div>
+              <button>купить</button>
+            </div>
+          </div>
+        
+        <div class="slick-slider__right-block">
+          <img class="chair" src="img/slick-slider__chair.png" alt="">
+        </div>
+      </div>
+      </div>
+      
+
+      <div>
+        <div class="slick-slider__flex">
+          <div>
+            <div class="slick-slider__left-block">
+              <h1>дизайнерская мебель</h1>
+              <p>Кресло “Антиква”</p>
+              <div id="display-block">
+                <p >$380</p>
+                <h3>$240</h3>
+              </div>
+              <button>купить</button>
+            </div>
+          </div>
+      
+            <div class="slick-slider__right-block">
+              <img class="chair" src="img/slick-slider__chair.png" alt="">
+            </div>
+          </div>
+        </div>
+      <div>
+        <div class="slick-slider__flex">
+          <div>
+            <div class="slick-slider__left-block">
+              <h1>дизайнерская мебель</h1>
+              <p>Кресло “Антиква”</p>
+              <div id="display-block">
+                <p >$380</p>
+                <h3>$240</h3>
+              </div>
+              <button>купить</button>
+            </div>
+          </div>
+      
+          <div class="slick-slider__right-block">
+            <img class="chair" src="img/slick-slider__chair.png" alt="">
+          </div>
+        </div>
+  </div>
+    </div>
+    <script src="js/jquery.js"></script>  
+    <script src="slick-slider/slick.min.js"></script>    
+    <script>
+      $('.slick-slider').slick({
+        infinite: false,
+              dots: true,
+              customPaging : function(slider, i) {
+                var thumb = $(slider.$slides[i]).data();
+                return '<a>'+('0'+(i+1)).slice(-2)+'</a>';
+            },
+            responsive: [{ 
+                breakpoint: 500,
+                settings: {
+                        dots: false,
+                        arrows: false,
+                        infinite: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 2} 
+            }]
+            });
+            $(document).ready(function() {
+  $(".menuToggle").click(function() {
+    $(this).toggleClass("active");
+    $('.menu').slideToggle(300, function(){
+      if($(this).css('display') === "none"){
+        $(this).removeAttr('style');
+      }
+    });
+  });
+});
+    </script>
+  
+  
+  </div>
+
+
+
   </div>
 </body>
 </html>
