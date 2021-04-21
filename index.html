@@ -83,12 +83,12 @@
               <button>купить</button>
             </div>
           </div>
-      
-            <div class="slick-slider__right-block">
-              <img class="chair" src="img/slick-slider__chair.png" alt="">
-            </div>
-          </div>
+        
+        <div class="slick-slider__right-block">
+          <img class="chair" src="img/slick-slider__chair.png" alt="">
         </div>
+      </div>
+      </div>
       <div>
         <div class="slick-slider__flex">
           <div>
@@ -102,50 +102,112 @@
               <button>купить</button>
             </div>
           </div>
-      
           <div class="slick-slider__right-block">
             <img class="chair" src="img/slick-slider__chair.png" alt="">
           </div>
         </div>
-  </div>
+      </div>
     </div>
-    <script src="js/jquery.js"></script>  
-    <script src="slick-slider/slick.min.js"></script>    
-    <script>
-      $('.slick-slider').slick({
-        infinite: false,
-              dots: true,
-              customPaging : function(slider, i) {
-                var thumb = $(slider.$slides[i]).data();
-                return '<a>'+('0'+(i+1)).slice(-2)+'</a>';
-            },
-            responsive: [{ 
-                breakpoint: 500,
-                settings: {
-                        dots: false,
-                        arrows: false,
-                        infinite: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 2} 
-            }]
-            });
-            $(document).ready(function() {
-  $(".menuToggle").click(function() {
-    $(this).toggleClass("active");
-    $('.menu').slideToggle(300, function(){
-      if($(this).css('display') === "none"){
-        $(this).removeAttr('style');
-      }
-    });
-  });
+  </div>
+  </div>
+
+<!-- Начало второй секции "Новинки" -->
+<div class="container">
+  <div class="flex-section__new-items">
+    <div class="flex-section__left-block">
+      <div class="flex-section__left-block__flex-tile bg-none">
+        <h2 class="new-link new-items">новинки</h2>
+      </div>
+      <div class="flex-section__left-block__flex-tile">
+        <div class="align-bottom ">
+          <img src="img/flex-section__left-block__chair1.png" alt="chair">
+          <p>
+            Стул «Смеркается»
+          </p>
+          <h3>
+            $280
+          </h3>
+        </div>
+      </div>
+      <div class="flex-section__left-block__flex-tile">
+        <img id="chandelier" src="img/flex-section__left-block__chandelier.png" alt="chandelier">
+        <p>
+          Люстра «Облако»
+        </p>
+        <h3>
+          $250
+        </h3>
+      </div>
+      <div class="flex-section__left-block__flex-tile">
+        <img src="img/flex-section__left-block__table.png" alt="table">
+        <p>
+          Стол «Крем брюле»
+        </p>
+        <h3>
+          $320
+        </h3>
+      </div>
+    </div>
+    <div id="white">
+      <div class="flex-section__right-block">
+      <img src="img/flex-section__righr-block__chair1.png" alt="chair">
+        <p>
+          Стул офисный «Белый шоколад»
+        </p>
+        <h3>
+          $120
+        </h3>
+      </div>
+    </div>
+</div>
+
+
+<!-- Конец второй секции "Новинки" -->
+
+<h3>,ehuth</h3>
+<h3>,ehuth</h3>
+<h3>,ehuth</h3>
+<h3>,ehuth</h3>
+<h3>,ehuth</h3>
+
+<!-- Начало JS -->
+<script src="js/jquery.js"></script>  
+<script src="slick-slider/slick.min.js"></script>    
+<script>
+  $('.slick-slider').slick({
+    infinite: false,
+      dots: true,
+      customPaging : function(slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return '<a>'+('0'+(i+1)).slice(-2)+'</a>';
+        },
+        responsive: [{ 
+          breakpoint: 500,
+          settings: {
+            dots: false,
+            arrows: false,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 2} 
+        }]
+        });
+        $(document).ready(function() {
+        $(".menuToggle").click(function() {
+        $(this).toggleClass("active");
+        $('.menu').slideToggle(300, function(){
+          if($(this).css('display') === "none"){
+            $(this).removeAttr('style');
+          }
 });
-    </script>
+});
+});
+</script>
   
   
-  </div>
 
 
 
-  </div>
+
+
 </body>
 </html>

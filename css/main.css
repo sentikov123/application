@@ -111,110 +111,6 @@ a {
   display: none;
 }
 
-@media (max-width: 520px) {
-  .header-flex__left {
-    display: none;
-  }
-  .header-flex__right {
-    position: absolute;
-    right: 90px;
-    top: 22px;
-  }
-  .wrapper {
-    display: block;
-  }
-  .menuToggle {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 10px;
-    z-index: 2000;
-  }
-  .menu {
-    display: none;
-    position: absolute;
-    top: -20px;
-    background: #303032;
-    width: 105%;
-    margin-left: -10px;
-    padding-left: 10px;
-    z-index: 2;
-  }
-  .menu li {
-    display: block;
-    text-transform: uppercase;
-    font-family: Open Sans;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0.13em;
-    text-align: center;
-    z-index: 1001;
-  }
-  .menuToggle .icon .active {
-    background: #FFFFFF;
-  }
-  .icon {
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    z-index: 100;
-  }
-  .hamburger {
-    width: 30px;
-    height: 3px;
-    transform: translate(-50%, -50%);
-    background: #313133;
-    transition: 0.5s;
-    display: inline-block;
-    margin-left: 12px;
-  }
-  .hamburger:before,
-  .hamburger:after {
-    content: "";
-    width: 30px;
-    height: 3px;
-    position: absolute;
-    background: #313133;
-    transition: 0.5s;
-  }
-  .hamburger:before {
-    top: -12px;
-  }
-  .hamburger:after {
-    top: 12px;
-  }
-  .icon.active .hamburger {
-    background: rgba(0, 0, 0, 0);
-  }
-  .icon.active .hamburger:before {
-    top: 0;
-    transform: rotate(45deg);
-    background: #ffffff;
-  }
-  .icon.active .hamburger:after {
-    top: 0;
-    transform: rotate(135deg);
-    background: #ffffff;
-  }
-  #burger-pt {
-    padding-top: 150px;
-  }
-  #burger-pb {
-    padding-bottom: 150px;
-  }
-  #burger-p {
-    padding-top: 57px;
-    padding-bottom: 57px;
-  }
-  #logo-mobile {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-}
-
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/open-sans.woff2") format("woff2"), url("../fonts/open-sans.woff") format("woff");
@@ -337,6 +233,87 @@ a {
   bottom: 0;
 }
 
+.flex-section__new-items {
+  display: flex;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.flex-section__new-items p {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.flex-section__new-items h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.flex-section__new-items h2 {
+  font-family: Playfair Display;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+  max-width: 130px;
+  position: relative;
+  top: 25%;
+  margin-left: 20px;
+}
+
+.flex-section__left-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-section__left-block__flex-tile {
+  width: 270px;
+  height: 289px;
+  padding-top: 20px;
+  margin: 0 10px 20px 10px;
+  text-align: center;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+  background: #fff;
+}
+
+.flex-section__right-block {
+  width: 570px;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+}
+
+.flex-section__right-block img {
+  width: 100%;
+}
+
+.bg-none {
+  background: transparent;
+  box-shadow: none;
+}
+
+#white {
+  background: white;
+  max-height: 638px;
+}
+
+.new-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  transition: width .3s;
+  background: #303032;
+}
+
+.flex-section__new-items:hover :after {
+  width: 100%;
+  transition: width .4s;
+}
+
 @media screen and (max-width: 1024px) {
   .slick-slider__left-block {
     max-width: 420px;
@@ -346,6 +323,9 @@ a {
   }
   .slick-slide img {
     width: 100%;
+  }
+  .flex-section__new-items {
+    flex-wrap: wrap;
   }
 }
 
@@ -395,5 +375,109 @@ a {
 .header-flex__left li {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (max-width: 520px) {
+  .header-flex__left {
+    display: none;
+  }
+  .header-flex__right {
+    position: absolute;
+    right: 90px;
+    top: 22px;
+  }
+  .wrapper {
+    display: block;
+  }
+  .menuToggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 2000;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: -20px;
+    background: #303032;
+    width: 105%;
+    margin-left: -10px;
+    padding-left: 10px;
+    z-index: 2;
+  }
+  .menu li {
+    display: block;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    z-index: 1001;
+  }
+  .menuToggle .icon .active {
+    background: #FFFFFF;
+  }
+  .icon {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+  }
+  .hamburger {
+    width: 30px;
+    height: 3px;
+    transform: translate(-50%, -50%);
+    background: #313133;
+    transition: 0.5s;
+    display: inline-block;
+    margin-left: 12px;
+  }
+  .hamburger:before,
+  .hamburger:after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background: #313133;
+    transition: 0.5s;
+  }
+  .hamburger:before {
+    top: -12px;
+  }
+  .hamburger:after {
+    top: 12px;
+  }
+  .icon.active .hamburger {
+    background: rgba(0, 0, 0, 0);
+  }
+  .icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+    background: #ffffff;
+  }
+  .icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+    background: #ffffff;
+  }
+  #burger-pt {
+    padding-top: 150px;
+  }
+  #burger-pb {
+    padding-bottom: 150px;
+  }
+  #burger-p {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+  #logo-mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
