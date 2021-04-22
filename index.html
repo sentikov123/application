@@ -138,13 +138,22 @@
           $250
         </h3>
       </div>
-      <div class="flex-section__left-block__flex-tile">
+      <div class="flex-section__left-block__flex-tile bg-pink">
         <img src="img/flex-section__left-block__table.png" alt="table">
         <p>
           Стол «Крем брюле»
         </p>
         <h3>
           $320
+        </h3>
+      </div>
+      <div class="flex-section__left-block__flex-tile dp-none">
+        <img src="img/flex-section__righr-block__chair1.png" alt="chair">
+        <p>
+          Стул «Белый шоколад»
+        </p>
+        <h3>
+          $120
         </h3>
       </div>
     </div>
@@ -160,15 +169,64 @@
       </div>
     </div>
 </div>
-
+</div>
 
 <!-- Конец второй секции "Новинки" -->
 
-<h3>,ehuth</h3>
-<h3>,ehuth</h3>
-<h3>,ehuth</h3>
-<h3>,ehuth</h3>
-<h3>,ehuth</h3>
+<!-- Начало третьей секции "slick-slider с отзывами" -->
+
+<div class="container">
+  <div class="slick-slider-rewiev">
+    <div>
+      <div class="slick-slider-rewiev__content">
+        <img src="img/elena-icon.png" alt="icon">
+        <div class="slick-slider-rewiev__content__info">
+          <h3>Елена Новикова</h3>
+          <p>студентка</p>
+        </div>
+        <p class="slick-slider-rewiev__content__rewiev">
+          «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="slick-slider-rewiev__content">
+        <img src="img/elena-icon.png" alt="icon">
+        <div class="slick-slider-rewiev__content__info">
+          <h3>Елена Новикова</h3>
+          <p>студентка</p>
+        </div>
+        <p class="slick-slider-rewiev__content__rewiev">
+          «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="slick-slider-rewiev__content">
+        <img src="img/elena-icon.png" alt="icon">
+        <div class="slick-slider-rewiev__content__info">
+          <h3>Елена Новикова</h3>
+          <p>студентка</p>
+        </div>
+        <p class="slick-slider-rewiev__content__rewiev">
+          «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="slick-slider-rewiev__content">
+        <img src="img/elena-icon.png" alt="icon">
+        <div class="slick-slider-rewiev__content__info">
+          <h3>Елена Новикова</h3>
+          <p>студентка</p>
+        </div>
+        <p class="slick-slider-rewiev__content__rewiev">
+          «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Начало JS -->
 <script src="js/jquery.js"></script>  
@@ -201,6 +259,14 @@
 });
 });
 });
+
+$('.slick-slider-rewiev').slick({
+  dots: true,
+  infinite: true,
+  prevArrow: '<div class="slider-arrow slider-arrow__left"></div>',
+  nextArrow: '<div class = "slider-arrow slider-arrow__right"></div>'
+
+  });
 </script>
   
   

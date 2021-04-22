@@ -1,6 +1,7 @@
 .flex-section
     &__new-items
         display: flex
+
         text-align: center
         margin-top: 200px
 
@@ -26,6 +27,7 @@
     &__left-block
         display: flex 
         flex-wrap: wrap 
+        justify-content: center
         &__flex-tile
             width: 270px
             height: 289px
@@ -60,3 +62,6 @@
 .flex-section__new-items:hover :after 
     width: 100%
     transition: width .4s
+.flex-section__left-block__flex-tile 
+    &.bg-pink
+        background: #faece9

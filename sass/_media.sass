@@ -1,3 +1,16 @@
+@media screen and (min-width: 1151px )
+    .dp-none
+        display: none
+    
+@media screen and ( max-width: 1150px )
+        .flex-section__right-block
+            display: none 
+        .dp-none
+            & img
+                max-height: 215px
+                margin-top: -20px
+    
+    
 @media screen and (max-width: 1024px) 
     .slick
         &-slider
@@ -11,6 +24,7 @@
     .flex-section
         &__new-items
             flex-wrap: wrap
+
         
 @media screen and (max-width: 900px)         
     .slick
@@ -21,7 +35,12 @@
                 font-size: 40px
                 line-height: 50px
             &__left-block p 
-                margin-top: -4px    
+                margin-top: -4px  
+    .flex-section__new-items  
+        margin-top: 100px
+    .background-pink
+        height: 525px   
+
 
 @media screen and (max-width: 768px)         
     .slick
@@ -47,17 +66,17 @@
         height: 480px   
         right: -25px
 .header-flex__left li
-    padding-left: 20px
-    padding-right: 20px 
+    padding-left: 15px
+    padding-right: 15px 
 
-@media( max-width: 520px)
+@media screen and (max-width: 520px)    
     .header-flex
         &__left
             display: none
         &__right
             position: absolute
             right: 90px
-            top: 22px
+            top: 20px
 
     .wrapper 
         display: block
@@ -154,3 +173,16 @@
         position: absolute
         left: 0
         top: 0
+    .slick
+        &-slider
+            &__left-block h1
+                font-size: 39px
+            &__left-block button
+                max-width: 100%    
+
+@media screen and (max-width: 425px)    
+    .slick
+        &-slider
+            &__left-block h1
+                font-size: 27px
+                line-height: 46px
