@@ -1,0 +1,45 @@
+.slider-arrow {
+    position:absolute;
+    bottom: 25px;
+    z-index: 99;
+    width: 29px;
+    height: 20px;
+    cursor: pointer;
+    top: 110px;
+  }
+  
+  .slider-arrow__left {
+    background:  url(../img/arrow-left.svg ) center no-repeat;
+    right: 90%;
+    margin-right: 100px;
+    transform: rotate(180deg);
+    padding: 9px 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+.slider-arrow__left:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+  
+  .slider-arrow__right {
+    background:  url(../img/arrow-left.svg ) center no-repeat;
+    right: 6%;
+    margin-right: -100px;
+    padding: 9px 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+  }
+  .slider-arrow__right:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+  
+  /* перебивка точек слайдера */
+  .slick-dots li button:before{
+    content: '';
+    background: url(../img/dot-nonactive.svg) center no-repeat;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    content: '';
+    background: url(../img/dot-active.svg) center no-repeat;
+  }
